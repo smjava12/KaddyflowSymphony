@@ -1,0 +1,30 @@
+#server:
+#  port: 8080
+#
+#spring:
+#  application:
+#    name: WORKFLOW-SERVICE 
+    
+
+#
+#eureka:#  client:#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#      hostname: localhost
+    
+logging:
+  level:
+    root: INFO
+    sun:
+      rmi: ERROR
+    javax:
+      management: ERROR
+    org:
+      apache:
+        tomcat: INFO
+      springframework:
+        cache:
+          interceptor:
+            CacheInterceptor: TRACE
